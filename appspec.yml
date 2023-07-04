@@ -1,0 +1,9 @@
+version: 0.0
+os: windows
+files:
+  - source: \index.html
+    destination: C:\inetpub\wwwroot
+hooks:
+  BeforeInstall:
+    - location: \before-install.ps1
+      timeout: 900
